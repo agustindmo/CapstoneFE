@@ -1,0 +1,75 @@
+
+.Principal { 
+    background-color: #495E57;
+    display: flex;
+    flex-wrap: wrap;
+    height: 325px;
+}
+
+.Hero {
+    background-color: #495E57 ;
+    display: grid;
+    grid-template-rows: 7em;
+    grid-template-columns: 30em;
+    padding-right: 4em;
+    height: 300px;
+}
+
+.HeroImg {
+    position:relative;
+    top: 70px;
+    left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1.Title {
+    color: #EE9972;
+    font-size: 56px;
+    justify-content: left;
+}
+
+h2.Subtitle {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight:30;
+    margin-bottom: 0.5em;
+    padding-bottom: 0.01em;
+    border-bottom: 0.01em;
+    text-align: left;
+    position: relative;
+}
+
+p {
+    display: block;
+    block-size: 10em;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: left;
+    position: relative;
+    left: 75px;
+}
+
+.ratb {
+    background-color: #F4CE14;
+    border: none;
+    border-radius: 16px;
+    display: inline-block;
+    padding: 5px;
+    margin: 2px;
+    width: 125px;
+    margin-left: 7em;
+    position:relative;
+    left: -5px;
+    top: -130px;
+}
+
+#restauranfood {
+    border-radius: 8%;
+}
+
+.Hero > h2.Subtitle, p {
+    padding-top: 0ch;
+    margin-top: 0;
+}
+

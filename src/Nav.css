@@ -1,0 +1,28 @@
+ul {
+    display: flex;
+    background-color: #ffffff;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-decoration: none;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    justify-content: center;
+}
+
+ul > li {
+    display: flex;
+    padding-right: 2em;
+    align-items: center;
+    text-decoration: none;
+}
+
+li > a {
+    text-decoration: none;
+    color: #1E1E1E;
+    font-size: medium;
+    font-weight: semibold;
+}
+
+.Logo{
+    margin-right: 9em;
+}

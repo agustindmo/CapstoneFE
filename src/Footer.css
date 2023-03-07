@@ -1,0 +1,29 @@
+.Container {
+    display: flex;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    padding-right: 5em;
+    margin-left: 5.75em;
+    justify-content: center;
+}
+
+table {
+    display: grid;
+    padding-right: 2em;
+    text-align: left;
+}
+
+table > a {
+    text-decoration: none;
+    color: #495E57;
+}
+
+th > a {
+    text-decoration: none;
+    color: #495E57;
+}
+
+td > a {
+    text-decoration: none;
+    color: #495E57;
+}

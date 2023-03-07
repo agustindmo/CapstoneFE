@@ -1,0 +1,66 @@
+.fullFirst {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #495E57;
+}
+
+.Main {
+    display: grid;
+    grid-template-rows: 7em;
+    grid-template-columns: 30em;
+    padding-right: 4em;
+    height: 300px;
+}
+
+h1.Title {
+    color: #EE9972;
+    font-size: 56px;
+    justify-content: left;
+    margin-left: 1.4em;
+}
+
+h2.Subtitle {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight:30;
+    margin-bottom: 0.5em;
+    margin-left: 2.5em;
+    text-align: left;
+    position: relative;
+    top: -40px;
+}
+
+.rowDescription {
+    width: 500px;
+    position: relative;
+    top: -70px;
+}
+
+p {
+    color: #ffffff;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 4em;
+}
+
+.ratb {
+    background-color: #F4CE14;
+    border: none;
+    border-radius: 16px;
+    display: inline-block;
+    padding: 10px;
+    margin: 2px;
+    width: 125px;
+    margin-left: 6em;
+    position: relative;
+    top: -70px;
+}
+
+#restauranfood {
+    border-radius: 8%;
+    position: relative;
+    top: 70px;
+}

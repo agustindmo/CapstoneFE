@@ -1,0 +1,74 @@
+.fullContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.tableSpecialsPromo {
+    margin-top: 4em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.promoTitle {
+}
+
+
+.omb {
+    background-color: #F4CE14;
+    border: none;
+    border-radius: 16px;
+    padding: 30px;
+    position: relative;
+    left: 3em;
+}
+
+.cardContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 20em;
+    background-color: #EDEFEE;
+    margin: 15px;
+    border-radius: 16px 16px 0 0;
+}
+
+.cardTitle {
+    position: relative;
+    right: -30px;
+}
+
+.cardPrice {
+    position: relative;
+    right: -70px;
+    color: #EE9972;
+}
+
+.imgCard {
+    border-radius: 16px 16px 0 0;
+    border-color: #000000;
+    border-width: 5px;
+}
+
+.cardText {
+    color: #000000;
+    position: relative;
+    left: -60px;
+    top: -10px;
+    text-align: left;
+}
+
+.cardButton {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    position: relative;
+    right: -30px;
+    bottom: 20px;
+}

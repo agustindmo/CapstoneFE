@@ -1,0 +1,41 @@
+
+.lastContainer {
+    display: flex;
+    background-color: #fbdabb;
+    height: 1000px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.lasttextCard {
+    display: grid;
+    grid-template-columns: 30em;
+    background-color: #EDEFEE;
+    width: 200px;
+    background-color: #fbdabb;
+    margin-right: 20em;
+}
+
+h1.lastTitle {
+    color: #EE9972;
+    font-size: 56px;
+    justify-content: left;
+    position: relative;
+    left: 1.25em;
+}
+
+p.lastText {
+    color: black;
+    block-size: 200px;
+}
+
+h2.lastSubtitle {
+    position: relative;
+    left: 3em;
+}
+
+.lasImg {
+    position: relative;
+}
