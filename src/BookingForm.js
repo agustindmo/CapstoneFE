@@ -1,49 +1,55 @@
-// style="display: grid; max-width: 200px; gap: 20px"
-import React, {useState} from "react"
+// style="display: grid; max-width: 200px; gap: 20px
+import "./bookingForm.css"
+import React, {useState, useReducer} from "react"
 
+function Form({time, dispatch, apiFunctions}) {
 
-function Form() {
-    
+    function handleChange(e) {
+        dispatch({type:'selected',
+        payload: e.target.value, 
+        })
+        console.log(e.target.value)
+    }
+
     const [date, setDate] = useState("");
-    const [time, setTime] = useState();
     const [guests, setGuests] = useState("2");
     const [occasion, setOcassion] = useState("Anniversary");
-    const [availableTimes, setAvailableTimes] = useState(["17:00", "18:00", "19:00", "20:00", "21:00", "22:00",])
-
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log("Form submitted");
         setDate("")
-        setTime("")
         setGuests("2")
         setOcassion("Anniversary")
+        console.log("")
+        console.log(apiFunctions.name)
     }
 
     return (
         <div className="llForm">
-            <form>
+            <form className="theForm">
                 <div>
-                    <label for="res-date">Choose date</label>
+                    <label htmlfor="res-date">Choose date</label>
                     <input 
                     type="date" 
                     id="res-date" 
                     value={date}
                     onChange ={(e) => setDate(e.target.value)}
+                    required
                     />
                 </div>
                 <div>
-                    <label for="res-time">Choose time</label>
+                    <label htmlfor="res-time">Choose time</label>
                     <select 
-                    id="res-time " 
-                    value={time}
-                    onChange={(e) => setTime(e.target.value) &&
-                    setAvailableTimes(e.target.value)}
+                    id="res-time" 
+                    value={"00:00"}
+                    onChange={handleChange}
+                    required
                     >
-                       {availableTimes.map(option => <option key={option} value={option}>{option}</option>)}
+                        {time.map((item) => (<option key={item} value={item}>{item}</option>))}
                     </select>
                 </div>
                 <div>
-                    <label for="guests">Number of guests</label>
+                    <label htmlfor="guests">Number of guests</label>
                     <input 
                     type="number" 
                     placeholder="1" 
@@ -52,17 +58,21 @@ function Form() {
                     id="guests" 
                     value={guests}
                     onChange={(e) => setGuests(e.target.value)} 
+                    required
                     />
                 </div>
                 <div>
-                    <label for="occasion">Occasion</label>
-                    <select id="occasion" value={occasion} onChange={(e) => setOcassion(e.target.value)}>
+                    <label htmlFor="occasion">Occasion</label>
+                    <select id="occasion" value={occasion} onChange={(e) => setOcassion(e.target.value)} required>
                         <option>Birthday</option>
                         <option>Anniversary</option>
                     </select>
                 </div>
                 <div>
-                    <input type="submit" value="Make Your reservation" onClick={handleSubmit}/>
+                    <input 
+                        type="submit" 
+                        value="Make Your reservation" 
+                        onClick={handleSubmit}/>
                 </div>
             </form>
         </div>
