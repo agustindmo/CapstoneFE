@@ -5,8 +5,6 @@ import Lemon from './lemon dessert.jpg';
 import Bruchetta from './bruchetta.png';
 
 
-
-
 function Specials() {
     return (
     <div className="fullContainer">
